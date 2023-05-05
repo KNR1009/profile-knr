@@ -49,11 +49,13 @@ const Wrapper = styled.div`
 
   /* Add box-shadow for 3D effect */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 4px 6px rgba(0, 0, 0, 0.22);
+  /* box-shadow: 0 12px 24px rgba(255, 255, 255, 0.2), 0 6px 8px rgba(255, 255, 255, 0.15); */
 
   /* Add hover effect */
   transition: transform 0.3s;
   &:hover {
     transform: translateY(-8px);
+    /* box-shadow: 0 12px 24px rgba(255, 255, 255, 0.2), 0 6px 8px rgba(255, 255, 255, 0.15); */
 
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 6px 8px rgba(0, 0, 0, 0.3);
   }
