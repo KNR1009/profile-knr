@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Link from 'next/link';
+import Image from 'next/image'; // ここで Image をインポート
 
 type Props = {
   title: string;
@@ -16,7 +17,12 @@ export const MdCard: React.FC<Props> = (props) => {
       <Link href={props.linkPath}>
         <a className='md-container'>
           <div className='md-card-image'>
-            <img src={props.imagePath} alt={props.title} />
+            <Image
+              src={props.imagePath}
+              alt={props.title}
+              layout='fill' // layout を fill に設定
+              objectFit='cover' // object-fit を cover に設定
+            />
           </div>
           <div className='md-card-item'>
             <h3 className='md-card-title'>{props.title}</h3>
@@ -48,6 +54,8 @@ const Wrapper = styled.div`
     overflow: hidden;
   }
   .md-card-image {
+    position: relative;
+
     img {
       border-radius: 20px 0 0 20px;
       width: 100%;

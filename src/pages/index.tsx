@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import banner from '../../public/profile-banner.png';
 import { LgCard } from '@/components/LgCard';
 import { MdCard } from '@/components/MdCard';
+import { SmCard } from '@/components/SmCard';
 
 export const Top: React.FC = () => {
   return (
@@ -57,6 +58,26 @@ export const Top: React.FC = () => {
         <div className='title'>
           <h2>What you can do.</h2>
         </div>
+        <div className='sm-cards'>
+          <SmCard
+            title='management-bookshelf'
+            imagePath='/rain.jpg'
+            description='A service that introduces books recommended by management'
+            linkPath='/'
+          />{' '}
+          <SmCard
+            title='management-bookshelf'
+            imagePath='/rain.jpg'
+            description='A service that introduces books recommended by management'
+            linkPath='/'
+          />
+          <SmCard
+            title='management-bookshelf'
+            imagePath='/rain.jpg'
+            description='A service that introduces books recommended by management'
+            linkPath='/'
+          />
+        </div>
       </div>
       <div className='contact-container container'>
         <div className='title'>
@@ -69,6 +90,19 @@ export const Top: React.FC = () => {
 
 const Wrapper = styled.div`
   color: #ffffff;
+  .sm-cards {
+    margin-top: 24px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 765px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 
   .md-cards {
     margin-top: 24px;
