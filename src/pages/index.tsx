@@ -20,7 +20,9 @@ export const Top: React.FC = () => {
         <div className='lg-cards'>
           <Link href='/'>
             <div className='lg-card'>
-              <img className='lg-card-image' src='/game.jpg' alt='' />
+              <div className='lg-card-image'>
+                <Image src='/game.jpg' alt='Achievements' layout='fill' objectFit='cover' />
+              </div>
               <div className='lg-card-item'>
                 <h3 className='lg-card-title'>Profile</h3>
                 <p className='lg-card-description'>My name is KNR. I do engineering and marketing.</p>
@@ -29,7 +31,9 @@ export const Top: React.FC = () => {
           </Link>
           <Link href='/'>
             <div className='lg-card type-b'>
-              <img className='lg-card-image' src='/nft-city.jpg' alt='' />
+              <div className='lg-card-image'>
+                <Image src='/nft-city.jpg' alt='Achievements' layout='fill' objectFit='cover' />
+              </div>
               <div className='lg-card-item'>
                 <h3 className='lg-card-title'>Achievements</h3>
                 <p className='lg-card-description'>Here are some of my career highlights and awards to date</p>
@@ -104,10 +108,10 @@ const Wrapper = styled.div`
     background: linear-gradient(-5deg, #479aa5, #5473cb 60%, #3e509d);
   }
   .lg-card-image {
+    position: relative;
     border-radius: 20px 20px 0 0;
     width: 100%;
     height: 60%; /* Set the image height to 50% of the card height */
-    object-fit: cover;
   }
   .lg-card-item {
     padding: 12px;
