@@ -14,4 +14,11 @@ const Wrapper = styled.div`
   margin: 0 auto;
   /* 余白調整 */
   padding: 48px;
+  @media (max-width: 1024px) {
+    padding: 32px;
+  }
+
+  @media (max-width: 765px) {
+    padding: 24px;
+  }
 `;
