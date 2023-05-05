@@ -77,6 +77,17 @@ const Wrapper = styled.div`
     height: 400px;
     position: relative;
     overflow: hidden;
+
+    /* Add box-shadow for 3D effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 4px 6px rgba(0, 0, 0, 0.22);
+
+    /* Add hover effect */
+    transition: transform 0.3s;
+    &:hover {
+      transform: translateY(-5px);
+
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 6px 8px rgba(0, 0, 0, 0.3);
+    }
   }
   .lg-card-image {
     border-radius: 20px 20px 0 0;
