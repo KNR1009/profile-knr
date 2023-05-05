@@ -14,7 +14,7 @@ export const Top: React.FC = () => {
   return (
     <Wrapper>
       <div className='banner-container'>
-        <Image src={banner} alt='ロゴ' className='logo-image' />
+        <Image src={banner} alt='ロゴ' className='logo-image' loading='lazy' />
       </div>
       <div className='profile-container container'>
         <div className='title'>
@@ -93,7 +93,7 @@ export const Top: React.FC = () => {
           <a href='https://qiita.com/KNR109' target='_blank' rel='noopener noreferrer'>
             <div className='icon-card  qiita-icon-card'>
               <div className='qiita-icon'>
-                <Image src='/qiita.png' alt='Qiitaアイコン' width={100} height={100} />
+                <Image src='/qiita.png' alt='Qiitaアイコン' width={100} height={100} loading='lazy' />
               </div>
             </div>
           </a>
@@ -101,7 +101,7 @@ export const Top: React.FC = () => {
           <a href='https://zenn.dev/sutamac' target='_blank' rel='noopener noreferrer'>
             <div className='icon-card  zenn-icon-card'>
               <div className='zenn-icon'>
-                <Image src='/zenn.png' alt='Qiitaアイコン' width={120} height={27} />
+                <Image src='/zenn.png' alt='Qiitaアイコン' width={120} height={27} loading='lazy' />
               </div>
             </div>
           </a>

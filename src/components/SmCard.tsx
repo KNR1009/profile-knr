@@ -16,7 +16,7 @@ export const SmCard: React.FC<Props> = (props) => {
       <Link href={props.linkPath}>
         <a>
           <div className='sm-card-image'>
-            <Image src={props.imagePath} alt={props.title} layout='fill' objectFit='cover' />
+            <Image src={props.imagePath} alt={props.title} layout='fill' objectFit='cover' loading='lazy' />
           </div>
           <div className='sm-card-item'>
             <h3 className='sm-card-title'>{props.title}</h3>
