@@ -4,6 +4,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 import banner from '../../public/profile-banner.png';
+// components
 import { LgCard } from '@/components/LgCard';
 import { MdCard } from '@/components/MdCard';
 import { SmCard } from '@/components/SmCard';
@@ -81,33 +82,37 @@ export const Top: React.FC = () => {
         </div>
         <div className='icon-cards'>
           {/* Twitterカード */}
-          <div className='icon-card  twitter-icon-card'>
-            <div className='twitter-icon'>
-              <FaTwitter size='100' />
+          <a href='https://twitter.com/home?lang=ja' target='_blank' rel='noopener noreferrer'>
+            <div className='icon-card  twitter-icon-card'>
+              <div className='twitter-icon'>
+                <FaTwitter size='100' />
+              </div>
             </div>
-          </div>
-          {/* Twitterカード */}
+          </a>
           {/* Qiitaカード */}
-          <div className='icon-card  qiita-icon-card'>
-            <div className='qiita-icon'>
-              <Image src='/qiita.png' alt='Qiitaアイコン' width={100} height={100} />
+          <a href='https://qiita.com/KNR109' target='_blank' rel='noopener noreferrer'>
+            <div className='icon-card  qiita-icon-card'>
+              <div className='qiita-icon'>
+                <Image src='/qiita.png' alt='Qiitaアイコン' width={100} height={100} />
+              </div>
             </div>
-          </div>
-          {/* Qiitaカード */}
+          </a>
           {/* Zennカード */}
-          <div className='icon-card  zenn-icon-card'>
-            <div className='zenn-icon'>
-              <Image src='/zenn.png' alt='Qiitaアイコン' width={120} height={27} />
+          <a href='https://zenn.dev/sutamac' target='_blank' rel='noopener noreferrer'>
+            <div className='icon-card  zenn-icon-card'>
+              <div className='zenn-icon'>
+                <Image src='/zenn.png' alt='Qiitaアイコン' width={120} height={27} />
+              </div>
             </div>
-          </div>
-          {/* Zennカード */}
+          </a>
           {/* GitHubカード */}
-          <div className='icon-card  github-icon-card'>
-            <div className='github-icon '>
-              <FaGithub size='100' color='black' />
+          <a href='https://github.com/KNR1009' target='_blank' rel='noopener noreferrer'>
+            <div className='icon-card  github-icon-card'>
+              <div className='github-icon '>
+                <FaGithub size='100' color='black' />
+              </div>
             </div>
-          </div>
-          {/* Githubカード */}
+          </a>
         </div>
       </div>
     </Wrapper>
