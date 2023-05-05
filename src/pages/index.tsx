@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 import banner from '../../public/profile-banner.png';
 import { LgCard } from '@/components/LgCard';
+import { MdCard } from '@/components/MdCard';
 
 export const Top: React.FC = () => {
   return (
@@ -37,6 +38,20 @@ export const Top: React.FC = () => {
         <div className='title'>
           <h2>Management Services</h2>
         </div>
+        <div className='md-cards'>
+          <MdCard
+            title='Blog for Engineers'
+            imagePath='/fnt.jpg'
+            description='I run an information blog for engineers.'
+            linkPath='/'
+          />
+          <MdCard
+            title='management-bookshelf'
+            imagePath='/rain.jpg'
+            description='A service that introduces books recommended by management'
+            linkPath='/'
+          />
+        </div>
       </div>
       <div className='can-container container'>
         <div className='title'>
@@ -55,6 +70,19 @@ export const Top: React.FC = () => {
 const Wrapper = styled.div`
   color: #ffffff;
 
+  .md-cards {
+    margin-top: 24px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 765px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
   /* lg-card */
   .lg-cards {
     margin-top: 24px;
