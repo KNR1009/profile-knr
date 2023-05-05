@@ -4074,7 +4074,7 @@
     "lodash" "^4.17.15"
     "react-docgen" "^5.0.0"
 
-"babel-plugin-styled-components@^2.0.7", "babel-plugin-styled-components@>= 1.12.0":
+"babel-plugin-styled-components@^2.1.1", "babel-plugin-styled-components@>= 1.12.0":
   "integrity" "sha512-c8lJlszObVQPguHkI+akXv8+Jgb9Ccujx0EetL7oIvwU100LxO6XAGe45qry37wUL40a5U9f23SYrivro2XKhA=="
   "resolved" "https://registry.npmjs.org/babel-plugin-styled-components/-/babel-plugin-styled-components-2.1.1.tgz"
   "version" "2.1.1"

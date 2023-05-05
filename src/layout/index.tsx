@@ -12,5 +12,6 @@ const Wrapper = styled.div`
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  padding: 24px;
+  /* 余白調整 */
+  padding: 48px;
 `;

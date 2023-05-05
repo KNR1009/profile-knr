@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 import banner from '../../public/profile-banner.png';
-import Link from 'next/link';
+import { LgCard } from '@/components/LgCard';
 
 export const Top: React.FC = () => {
   return (
@@ -16,33 +16,22 @@ export const Top: React.FC = () => {
         <div className='title'>
           <h2>Profile・Achievements</h2>
         </div>
-        {/* lg-cards */}
         <div className='lg-cards'>
-          <Link href='/'>
-            <div className='lg-card'>
-              <div className='lg-card-image'>
-                <Image src='/game.jpg' alt='Achievements' layout='fill' objectFit='cover' />
-              </div>
-              <div className='lg-card-item'>
-                <h3 className='lg-card-title'>Profile</h3>
-                <p className='lg-card-description'>My name is KNR. I do engineering and marketing.</p>
-              </div>
-            </div>
-          </Link>
-          <Link href='/'>
-            <div className='lg-card type-b'>
-              <div className='lg-card-image'>
-                <Image src='/nft-city.jpg' alt='Achievements' layout='fill' objectFit='cover' />
-              </div>
-              <div className='lg-card-item'>
-                <h3 className='lg-card-title'>Achievements</h3>
-                <p className='lg-card-description'>Here are some of my career highlights and awards to date</p>
-              </div>
-            </div>
-          </Link>
+          <LgCard
+            title='Profile'
+            imagePath='/game.jpg'
+            type='a'
+            description='My name is KNR. I do engineering and marketing.'
+            linkPath='/'
+          />
+          <LgCard
+            title='Achievements'
+            imagePath='/nft-city.jpg'
+            type='b'
+            description='Here are some of my career highlights and awards to date.'
+            linkPath='/'
+          />
         </div>
-
-        {/* lg-cards */}
       </div>
       <div className='management-service-container container'>
         <div className='title'>
@@ -80,52 +69,10 @@ const Wrapper = styled.div`
       grid-template-columns: repeat(1, 1fr);
     }
   }
-  .lg-card {
-    cursor: pointer;
-    border-radius: 20px;
-    background-image: linear-gradient(
-      to bottom right,
-      rgba(244, 73, 244, 0.8),
-      rgba(0, 25, 192, 0.8),
-      rgba(121, 120, 230, 0.8)
-    );
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-
-    /* Add box-shadow for 3D effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 4px 6px rgba(0, 0, 0, 0.22);
-
-    /* Add hover effect */
-    transition: transform 0.3s;
-    &:hover {
-      transform: translateY(-8px);
-
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 6px 8px rgba(0, 0, 0, 0.3);
-    }
-  }
   .type-b {
     background: linear-gradient(-5deg, #479aa5, #5473cb 60%, #3e509d);
   }
-  .lg-card-image {
-    position: relative;
-    border-radius: 20px 20px 0 0;
-    width: 100%;
-    height: 60%; /* Set the image height to 50% of the card height */
-  }
-  .lg-card-item {
-    padding: 12px;
-    h3 {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-    p {
-      color: #ffffff;
-      opacity: 0.8;
-      font-size: 16px;
-    }
-  }
+
   .container {
     margin-top: 32px;
   }
