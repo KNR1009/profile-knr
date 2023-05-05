@@ -16,7 +16,7 @@ export const Top: React.FC = () => {
         <div className='title'>
           <h2>Profile・Achievements</h2>
         </div>
-        {/* lg-card */}
+        {/* lg-cards */}
         <div className='lg-cards'>
           <Link href='/'>
             <div className='lg-card'>
@@ -27,7 +27,18 @@ export const Top: React.FC = () => {
               </div>
             </div>
           </Link>
+          <Link href='/'>
+            <div className='lg-card type-b'>
+              <img className='lg-card-image' src='/game.jpg' alt='' />
+              <div className='lg-card-item'>
+                <h3 className='lg-card-title'>Profile</h3>
+                <p className='lg-card-description'>My name is KNR. I do engineering and marketing.</p>
+              </div>
+            </div>
+          </Link>
         </div>
+
+        {/* lg-cards */}
       </div>
       <div className='management-service-container container'>
         <div className='title'>
@@ -84,15 +95,18 @@ const Wrapper = styled.div`
     /* Add hover effect */
     transition: transform 0.3s;
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
 
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 6px 8px rgba(0, 0, 0, 0.3);
     }
   }
+  .type-b {
+    background: linear-gradient(-5deg, #479aa5, #5473cb 60%, #3e509d);
+  }
   .lg-card-image {
     border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 70%; /* Set the image height to 50% of the card height */
+    height: 60%; /* Set the image height to 50% of the card height */
     object-fit: cover;
   }
   .lg-card-item {
