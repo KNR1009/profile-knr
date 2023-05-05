@@ -70,7 +70,7 @@ const Wrapper = styled.div`
     }
   }
   .type-b {
-    background: linear-gradient(-5deg, #479aa5, #5473cb 60%, #3e509d);
+    background-image: linear-gradient(to bottom right, rgba(52, 152, 219, 0.8), rgba(26, 188, 156, 0.8));
   }
 
   .container {
