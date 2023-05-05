@@ -22,6 +22,7 @@ export const MdCard: React.FC<Props> = (props) => {
               alt={props.title}
               layout='fill' // layout を fill に設定
               objectFit='cover' // object-fit を cover に設定
+              loading='lazy'
             />
           </div>
           <div className='md-card-item'>

@@ -18,7 +18,7 @@ export const LgCard: React.FC<Props> = (props) => {
       <Link href={props.linkPath}>
         <a>
           <div className='lg-card-image'>
-            <Image src={props.imagePath} alt={props.title} layout='fill' objectFit='cover' />
+            <Image src={props.imagePath} alt={props.title} layout='fill' objectFit='cover' loading='lazy' />
           </div>
           <div className='lg-card-item'>
             <h3 className='lg-card-title'>{props.title}</h3>
