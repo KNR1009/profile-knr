@@ -7,6 +7,7 @@ import banner from '../../public/profile-banner.png';
 import { LgCard } from '@/components/LgCard';
 import { MdCard } from '@/components/MdCard';
 import { SmCard } from '@/components/SmCard';
+import { FaTwitter, FaGithub } from 'react-icons/fa';
 
 export const Top: React.FC = () => {
   return (
@@ -76,7 +77,37 @@ export const Top: React.FC = () => {
       </div>
       <div className='contact-container container'>
         <div className='title'>
-          <h2>Contact Us</h2>
+          <h2>Other Links</h2>
+        </div>
+        <div className='icon-cards'>
+          {/* Twitterカード */}
+          <div className='icon-card  twitter-icon-card'>
+            <div className='twitter-icon'>
+              <FaTwitter size='100' />
+            </div>
+          </div>
+          {/* Twitterカード */}
+          {/* Qiitaカード */}
+          <div className='icon-card  qiita-icon-card'>
+            <div className='qiita-icon'>
+              <Image src='/qiita.png' alt='Qiitaアイコン' width={100} height={100} />
+            </div>
+          </div>
+          {/* Qiitaカード */}
+          {/* Zennカード */}
+          <div className='icon-card  zenn-icon-card'>
+            <div className='zenn-icon'>
+              <Image src='/zenn.png' alt='Qiitaアイコン' width={120} height={27} />
+            </div>
+          </div>
+          {/* Zennカード */}
+          {/* GitHubカード */}
+          <div className='icon-card  github-icon-card'>
+            <div className='github-icon '>
+              <FaGithub size='100' color='black' />
+            </div>
+          </div>
+          {/* Githubカード */}
         </div>
       </div>
     </Wrapper>
@@ -84,6 +115,60 @@ export const Top: React.FC = () => {
 };
 
 const Wrapper = styled.div`
+  .icon-cards {
+    margin-top: 24px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 765px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .qiita-icon-card {
+    background: linear-gradient(144deg, #f2f2f2, #ffffff 50%, #e8e8e8);
+    background: linear-gradient(144deg, #b1e5d5, #fff 70%, #e6f9d6);
+  }
+  .github-icon-card {
+    background: linear-gradient(144deg, #fff, #c3cbff 60%, #af99ff);
+  }
+  .zenn-icon-card {
+    background: linear-gradient(144deg, #fff, #b8d3ff 70%, #8fceff);
+  }
+  .qiita-icon .zenn-icon {
+    position: relative;
+  }
+
+  .icon-card {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 4px 6px rgba(0, 0, 0, 0.22); /* Add box-shadow */
+
+    /* Add hover effect */
+    transition: transform 0.3s;
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 6px 8px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .twitter-icon-card {
+    background: linear-gradient(144deg, #64a7e5, #1da1f2 50%, #157ac7);
+  }
+
+  .twitter-icon,
+  .github-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   color: #ffffff;
   .sm-cards {
     margin-top: 24px;
