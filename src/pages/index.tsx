@@ -29,10 +29,10 @@ export const Top: React.FC = () => {
           </Link>
           <Link href='/'>
             <div className='lg-card type-b'>
-              <img className='lg-card-image' src='/game.jpg' alt='' />
+              <img className='lg-card-image' src='/nft-city.jpg' alt='' />
               <div className='lg-card-item'>
-                <h3 className='lg-card-title'>Profile</h3>
-                <p className='lg-card-description'>My name is KNR. I do engineering and marketing.</p>
+                <h3 className='lg-card-title'>Achievements</h3>
+                <p className='lg-card-description'>Here are some of my career highlights and awards to date</p>
               </div>
             </div>
           </Link>
@@ -118,7 +118,7 @@ const Wrapper = styled.div`
     }
     p {
       color: #ffffff;
-      opacity: 0.55;
+      opacity: 0.8;
       font-size: 16px;
     }
   }
