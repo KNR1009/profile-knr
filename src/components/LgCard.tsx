@@ -65,7 +65,7 @@ const Wrapper = styled.div`
     height: 60%; /* Set the image height to 50% of the card height */
   }
   .lg-card-item {
-    padding: 12px;
+    padding: 24px;
     h3 {
       font-size: 24px;
       font-weight: bold;
