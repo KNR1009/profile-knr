@@ -30,7 +30,12 @@ export const SmCard: React.FC<Props> = (props) => {
 const Wrapper = styled.div`
   cursor: pointer;
   border-radius: 20px;
-  background-image: #353d5e;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(20, 20, 20, 0.8),
+    rgba(45, 45, 45, 0.8),
+    rgba(70, 70, 70, 0.8)
+  );
   height: 400px;
   position: relative;
   overflow: hidden;

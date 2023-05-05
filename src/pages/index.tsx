@@ -59,22 +59,17 @@ export const Top: React.FC = () => {
           <h2>What you can do.</h2>
         </div>
         <div className='sm-cards'>
+          <SmCard title='personal' imagePath='/gameing.jpg' description='Personal Skills.' linkPath='/' />{' '}
           <SmCard
-            title='management-bookshelf'
-            imagePath='/rain.jpg'
-            description='A service that introduces books recommended by management'
-            linkPath='/'
-          />{' '}
-          <SmCard
-            title='management-bookshelf'
-            imagePath='/rain.jpg'
-            description='A service that introduces books recommended by management'
+            title='company'
+            imagePath='/pc.jpg'
+            description='These are the services my company can provide'
             linkPath='/'
           />
           <SmCard
-            title='management-bookshelf'
-            imagePath='/rain.jpg'
-            description='A service that introduces books recommended by management'
+            title='event'
+            imagePath='/dj.jpg'
+            description='I also organize events for engineers and creators and DJ.'
             linkPath='/'
           />
         </div>
