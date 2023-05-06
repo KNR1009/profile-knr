@@ -20,7 +20,7 @@ export const Profile: React.FC = () => {
           <p>出身:&nbsp;&nbsp;東京都</p>
           <p>学歴:&nbsp;&nbsp; MARCHの理系</p>
           <p>年齢:&nbsp;&nbsp;25歳の代です(2023年)</p>
-          <p>趣味:&nbsp;&nbsp;お笑い, 旅行, キャンプ, DJ, カフェ巡り</p>
+          <p>趣味:&nbsp;&nbsp;旅行, キャンプ, DJ, カフェ巡り</p>
           <p>特技:&nbsp;&nbsp;イベント企画</p>
         </section>
         <section>

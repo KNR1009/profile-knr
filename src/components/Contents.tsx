@@ -23,7 +23,8 @@ const Wrapper = styled.div`
   margin-top: 24px;
   padding: 24px;
   border-radius: 20px;
-  /* box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.6), 2px 2px 4px rgba(0, 0, 0, 0.3); */
+
+  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.6), 2px 2px 4px rgba(0, 0, 0, 0.3);
   background-image: linear-gradient(
     to bottom right,
     rgba(255, 255, 255, 1),
