@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 // styled
 import styled from 'styled-components';
@@ -10,13 +10,25 @@ import { MdCard } from '@/components/MdCard';
 import { SmCard } from '@/components/SmCard';
 import { FaTwitter, FaGithub } from 'react-icons/fa';
 
+// fade-in
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // AOS CSSをインポート
+
 export const Top: React.FC = () => {
+  // fade-inの初期化
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  }, []);
   return (
     <Wrapper>
-      <div className='banner-container'>
+      <div className='banner-container' data-aos='fade-up'>
         <Image src={banner} alt='ロゴ' className='logo-image' loading='lazy' />
       </div>
-      <div className='profile-container container'>
+      <div className='profile-container container' data-aos='fade-up'>
         <div className='title'>
           <h2>Profile・Achievements</h2>
         </div>
@@ -37,7 +49,7 @@ export const Top: React.FC = () => {
           />
         </div>
       </div>
-      <div className='management-service-container container'>
+      <div className='management-service-container container' data-aos='fade-up'>
         <div className='title'>
           <h2>Management Services</h2>
         </div>
@@ -56,7 +68,7 @@ export const Top: React.FC = () => {
           />
         </div>
       </div>
-      <div className='can-container container'>
+      <div className='can-container container' data-aos='fade-up'>
         <div className='title'>
           <h2>What you can do.</h2>
         </div>
@@ -76,7 +88,7 @@ export const Top: React.FC = () => {
           />
         </div>
       </div>
-      <div className='contact-container container'>
+      <div className='contact-container container' data-aos='fade-up'>
         <div className='title'>
           <h2>Other Links</h2>
         </div>
