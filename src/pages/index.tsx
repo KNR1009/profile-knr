@@ -132,6 +132,8 @@ export const Top: React.FC = () => {
 };
 
 const Wrapper = styled.div`
+  color: #ffffff;
+
   .icon-cards {
     margin-top: 24px;
     display: grid;
@@ -186,7 +188,6 @@ const Wrapper = styled.div`
     align-items: center;
   }
 
-  color: #ffffff;
   .sm-cards {
     margin-top: 24px;
     display: grid;

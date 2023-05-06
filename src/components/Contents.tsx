@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
+
+// fade-in
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // AOS CSSをインポート
 
 type Props = { children: React.ReactNode };
 export const Content: React.FC<Props> = (props) => {
-  return <Wrapper>{props.children}</Wrapper>;
+  // fade-inの初期化
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  }, []);
+  return <Wrapper data-aos='fade-up'>{props.children}</Wrapper>;
 };
 
 const Wrapper = styled.div`
@@ -11,19 +23,22 @@ const Wrapper = styled.div`
   margin-top: 24px;
   padding: 24px;
   border-radius: 20px;
-  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.6), 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.6), 2px 2px 4px rgba(0, 0, 0, 0.3); */
   background-image: linear-gradient(
     to bottom right,
     rgba(255, 255, 255, 1),
     rgba(240, 230, 250, 1),
     rgba(230, 210, 240, 1)
   );
+  section {
+    margin-bottom: 48px;
+  }
   h2 {
     padding-bottom: 0.3em;
     margin-bottom: 32px;
     font-size: 30px;
     font-weight: bold;
-    border-bottom: 1px solid #062a4a;
+    border-bottom: 1px solid #5c93bb95;
   }
   h3 {
     font-size: 24px;
