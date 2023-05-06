@@ -38,7 +38,7 @@ export const Top: React.FC = () => {
             imagePath='/game.jpg'
             type='a'
             description='My name is KNR. I do engineering and marketing.'
-            linkPath='/'
+            linkPath='/profile'
           />
           <LgCard
             title='Achievements'
