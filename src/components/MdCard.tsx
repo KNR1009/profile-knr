@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Link from 'next/link';
 import Image from 'next/image'; // ここで Image をインポート
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 type Props = {
   title: string;
@@ -26,7 +27,12 @@ export const MdCard: React.FC<Props> = (props) => {
             />
           </div>
           <div className='md-card-item'>
-            <h3 className='md-card-title'>{props.title}</h3>
+            <h3 className='md-card-title'>
+              {props.title}
+              <span className='link-icon'>
+                <FaExternalLinkAlt size={15} />
+              </span>
+            </h3>
             <p className='md-card-description'>{props.description}</p>
           </div>
         </a>
@@ -36,6 +42,9 @@ export const MdCard: React.FC<Props> = (props) => {
 };
 
 const Wrapper = styled.div`
+  .link-icon {
+    margin-left: 10px;
+  }
   /* Add hover effect */
   transition: transform 0.3s;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 4px 6px rgba(0, 0, 0, 0.22);

@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import React from 'react';
 import styled from 'styled-components';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 type Props = {
   title: string;
@@ -21,7 +22,12 @@ export const LgCard: React.FC<Props> = (props) => {
             <Image src={props.imagePath} alt={props.title} layout='fill' objectFit='cover' loading='lazy' />
           </div>
           <div className='lg-card-item'>
-            <h3 className='lg-card-title'>{props.title}</h3>
+            <h3 className='lg-card-title'>
+              {props.title}
+              <span className='link-icon'>
+                <FaExternalLinkAlt size={15} />
+              </span>
+            </h3>
             <p className='lg-card-description'>{props.description}</p>
           </div>
         </a>
@@ -33,6 +39,9 @@ export const LgCard: React.FC<Props> = (props) => {
 const Wrapper = styled.div`
   .type-b {
     background: linear-gradient(-5deg, #479aa5, #5473cb 60%, #3e509d);
+  }
+  .link-icon {
+    margin-left: 10px;
   }
 
   cursor: pointer;
