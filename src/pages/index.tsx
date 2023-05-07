@@ -45,7 +45,7 @@ export const Top: React.FC = () => {
             imagePath='/nft-city.jpg'
             type='b'
             description='Here are some of my career highlights and awards to date.'
-            linkPath='/'
+            linkPath='/achievements'
           />
         </div>
       </div>
