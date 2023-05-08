@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Image from 'next/image';
 
 // components
 import { Content } from '@/components/Contents';
@@ -9,39 +10,36 @@ import { SmCard } from '@/components/SmCard';
 // link
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
-export const Profile: React.FC = () => {
+export const ManagementBookshelf: React.FC = () => {
   return (
     <Wrapper>
-      <Title title='プロフィール' />
+      <Title title='運営サービス' />
       <Content>
         <section>
-          <h2>基本情報</h2>
+          <h2>
+            <a href='https://management-bookshelf.com/' target='_blank' rel='noopener noreferrer'>
+              経営者の本棚
+              <span className='icon'>
+                <FaExternalLinkAlt size={15} />
+              </span>
+            </a>
+          </h2>
           <ul>
-            <li>名前:&nbsp;&nbsp;KNR</li>
-            <li>出身:&nbsp;&nbsp;東京都</li>
-            <li>学歴:&nbsp;&nbsp; MARCHの理系</li>
-            <li>年齢:&nbsp;&nbsp;25歳の代です(2023年度)</li>
-            <li>趣味:&nbsp;&nbsp;旅行, キャンプ, DJ, カフェ巡り</li>
-            <li>特技:&nbsp;&nbsp;イベント企画</li>
+            <li>経営者・役員の読んでいる本についてフォーカスしたメディア</li>
+            <li>2023年5月にリリース</li>
+            <li>インタビュー・記事作成・PRまで一貫して行います</li>
           </ul>
+          <Image src='/management-bookshelf.jpg' alt='Qiitaのトロフィー' width={400} height={300} />
         </section>
         <section>
-          <h2>仕事</h2>
-          <ul>
-            <li>経歴:&nbsp;&nbsp;新卒3年目(2023年度)</li>
-            <li>職場:&nbsp;&nbsp;40名規模の渋谷のWeb系開発会社</li>
-            <li>役職:&nbsp;&nbsp;執行役員(最年少)</li>
-            <li>職種:&nbsp;&nbsp;エンジニア×マーケター×広報</li>
-          </ul>
+          <h2>その他</h2>
+          <p>
+            経営者の本棚のインタビューを受けてくれる方は絶賛大募集してます
+            <a className='link' href='https://management-bookshelf.com/form' target='_blank' rel='noopener noreferrer'>
+              <FaExternalLinkAlt size={16} />
+            </a>
+          </p>
         </section>
-
-        <h2>その他</h2>
-        <p>
-          同じ職種の方や経営者や役員の方で興味を持っていただけたらフォームからどうぞ
-          <a className='link' href={process.env.NEXT_PUBLIC_CONTACT_LINK} target='_blank' rel='noopener noreferrer'>
-            <FaExternalLinkAlt size={16} />
-          </a>
-        </p>
       </Content>
       <div className='can-container container'>
         <div className='title'>
@@ -80,6 +78,13 @@ const Wrapper = styled.div`
       font-size: 32px;
       font-weight: bold;
     }
+  }
+  .icon {
+    margin-left: 8px;
+  }
+  .a-link {
+    color: #1a73e8;
+    text-decoration: underline;
   }
   .link {
     margin-left: 8px;

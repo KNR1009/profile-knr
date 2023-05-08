@@ -58,13 +58,13 @@ export const Top: React.FC = () => {
             title='Blog for Engineers'
             imagePath='/fnt.jpg'
             description='I run an information blog for engineers.'
-            linkPath='/'
+            linkPath='/blog-for-engineer'
           />
           <MdCard
             title='management-bookshelf'
             imagePath='/rain.jpg'
             description='A service that introduces books recommended by management'
-            linkPath='/'
+            linkPath='/management-bookshelf'
           />
         </div>
       </div>
