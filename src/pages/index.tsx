@@ -73,7 +73,7 @@ export const Top: React.FC = () => {
           <h2>What you can do.</h2>
         </div>
         <div className='sm-cards'>
-          <SmCard title='personal' imagePath='/gameing.jpg' description='Personal Skills.' linkPath='/' />{' '}
+          <SmCard title='personal' imagePath='/gameing.jpg' description='Personal Skills.' linkPath='/personal' />
           <SmCard
             title='company'
             imagePath='/pc.jpg'
