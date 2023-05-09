@@ -15,6 +15,17 @@ export const Personal: React.FC = () => {
       <Title title='プロフィール' />
       <Content>
         <section>
+          <h2>できること概要</h2>
+          <ul>
+            <li>Web系の開発や制作（要件定義から設計、開発）</li>
+            <li>記事の執筆やメディアの0→1立ち上げ</li>
+            <li>GA4やBigQueryを利用したユーザーの行動分析及び改善案の提案</li>
+            <li>広告運用(ディスプレイ・リスティング)</li>
+            <li>もくもく会、LT会、勉強会の企画・運営やDJ</li>
+            <li>SNSでのサービス等のプロモーション（月間インプレッション数1.8億）</li>
+          </ul>
+        </section>
+        <section>
           <h2>開発系</h2>
           <h3>フロントエンド(歴3年)</h3>
           <ul>
