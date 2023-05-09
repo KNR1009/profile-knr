@@ -29,7 +29,7 @@ export const Profile: React.FC = () => {
           <h2>仕事</h2>
           <ul>
             <li>経歴:&nbsp;&nbsp;新卒3年目(2023年度)</li>
-            <li>職場:&nbsp;&nbsp;40名規模の渋谷のWeb系開発会社</li>
+            <li>職場:&nbsp;&nbsp;渋谷のWeb系開発会社</li>
             <li>役職:&nbsp;&nbsp;執行役員(最年少)</li>
             <li>職種:&nbsp;&nbsp;エンジニア×マーケター×広報</li>
           </ul>
@@ -52,8 +52,8 @@ export const Profile: React.FC = () => {
             title='個人'
             imagePath='/gameing.jpg'
             description='私のこれまでの経歴や得意分野をまとめています'
-            linkPath='/'
-          />{' '}
+            linkPath='/personal'
+          />
           <SmCard
             title='会社'
             imagePath='/pc.jpg'

@@ -182,7 +182,7 @@ export const Personal: React.FC = () => {
             title='個人'
             imagePath='/gameing.jpg'
             description='私のこれまでの経歴や得意分野をまとめています'
-            linkPath='/'
+            linkPath='/personal'
           />
           <SmCard
             title='会社'

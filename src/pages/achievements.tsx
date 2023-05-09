@@ -64,7 +64,7 @@ export const Achievements: React.FC = () => {
           </p>
         </section>
       </Content>
-      <div className='can-container container' data-aos='fade-up'>
+      <div className='can-container container'>
         <div className='title'>
           <h2>できること</h2>
         </div>
@@ -73,8 +73,8 @@ export const Achievements: React.FC = () => {
             title='個人'
             imagePath='/gameing.jpg'
             description='私のこれまでの経歴や得意分野をまとめています'
-            linkPath='/'
-          />{' '}
+            linkPath='/personal'
+          />
           <SmCard
             title='会社'
             imagePath='/pc.jpg'
