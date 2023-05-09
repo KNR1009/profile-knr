@@ -38,14 +38,14 @@ export const Top: React.FC = () => {
             imagePath='/game.jpg'
             type='a'
             description='My name is KNR. I do engineering and marketing.'
-            linkPath='/'
+            linkPath='/profile'
           />
           <LgCard
             title='Achievements'
             imagePath='/nft-city.jpg'
             type='b'
             description='Here are some of my career highlights and awards to date.'
-            linkPath='/'
+            linkPath='/achievements'
           />
         </div>
       </div>
@@ -58,13 +58,13 @@ export const Top: React.FC = () => {
             title='Blog for Engineers'
             imagePath='/fnt.jpg'
             description='I run an information blog for engineers.'
-            linkPath='/'
+            linkPath='/blog-for-engineer'
           />
           <MdCard
             title='management-bookshelf'
             imagePath='/rain.jpg'
             description='A service that introduces books recommended by management'
-            linkPath='/'
+            linkPath='/management-bookshelf'
           />
         </div>
       </div>
@@ -73,7 +73,7 @@ export const Top: React.FC = () => {
           <h2>What you can do.</h2>
         </div>
         <div className='sm-cards'>
-          <SmCard title='personal' imagePath='/gameing.jpg' description='Personal Skills.' linkPath='/' />{' '}
+          <SmCard title='personal' imagePath='/gameing.jpg' description='Personal Skills.' linkPath='/personal' />
           <SmCard
             title='company'
             imagePath='/pc.jpg'
@@ -132,6 +132,8 @@ export const Top: React.FC = () => {
 };
 
 const Wrapper = styled.div`
+  color: #ffffff;
+
   .icon-cards {
     margin-top: 24px;
     display: grid;
@@ -186,7 +188,6 @@ const Wrapper = styled.div`
     align-items: center;
   }
 
-  color: #ffffff;
   .sm-cards {
     margin-top: 24px;
     display: grid;

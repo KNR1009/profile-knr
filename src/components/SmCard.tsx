@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 type Props = {
   title: string;
@@ -19,7 +20,12 @@ export const SmCard: React.FC<Props> = (props) => {
             <Image src={props.imagePath} alt={props.title} layout='fill' objectFit='cover' loading='lazy' />
           </div>
           <div className='sm-card-item'>
-            <h3 className='sm-card-title'>{props.title}</h3>
+            <h3 className='sm-card-title'>
+              {props.title}
+              <span className='link-icon'>
+                <FaExternalLinkAlt size={15} />
+              </span>
+            </h3>
             <p className='sm-card-description'>{props.description}</p>
           </div>
         </a>
@@ -28,6 +34,9 @@ export const SmCard: React.FC<Props> = (props) => {
   );
 };
 const Wrapper = styled.div`
+  .link-icon {
+    margin-left: 10px;
+  }
   cursor: pointer;
   border-radius: 20px;
   background-image: linear-gradient(

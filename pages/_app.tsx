@@ -7,14 +7,14 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>KNRプロフィール | トップ</title>
+        <title>KNRプロフィール</title>
         <meta
           name='description'
           content='KNRのプロフィールサイトです。渋谷でWeb系開発。執行役員。Qiita「2022年 TOP Contributor」。Zennで4記事連続トレンド1位'
         />
         <link rel='icon' href='/kuri.PNG' />
         <meta property='og:type' content='article' />
-        <meta property='og:title' content='KRNプロフィール' />
+        <meta property='og:title' content='KNRプロフィール' />
         <meta
           property='og:description'
           content='KNRのプロフィールサイトです。渋谷でWeb系開発。執行役員。Qiita「2022年 TOP Contributor」。Zennで4記事連続トレンド1位'
@@ -31,7 +31,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name='twitter:image' content='/kuri.PNG' />
         <meta property='og:site_name' content='KNRプロフィール' />
         <meta property='og:locale' content='ja_JP' />
-        {/* <link rel='canonical' href={`${currentUrl}`} /> */}
       </Head>
       <Component {...pageProps} />
     </>
