@@ -26,7 +26,7 @@ const BlogForEngineersPage: NextPage = () => {
           name='twitter:description'
           content='KNRが運営しているサービス紹介ページ。スタバのブログ庫というエンジニア向けの情報発信メディアを運用しています。月間PV数は1万でエンジニア向けのキーワードでSEO上位も獲得。'
         />
-        <meta name='twitter:image' content='/kuri.PNG' />
+        <meta name='twitter:image' content='/kuri.png' />
         <link rel='canonical' href={`https://knr-profile.com${currentPath}`} />
       </Head>
       <Layout>
