@@ -57,7 +57,7 @@ export const ManagementBookshelf: React.FC = () => {
             title='会社'
             imagePath='/pc.jpg'
             description='会社ができることや提供サービスを紹介します。'
-            linkPath='/'
+            linkPath='/company'
           />
           <SmCard
             title='イベント運営'
