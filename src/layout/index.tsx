@@ -13,7 +13,7 @@ export const Layout: React.FC<Props> = (props) => {
       {!props.isTop && (
         <Link href='/'>
           <div className='logo'>
-            <Image src='/kuri.png' alt='Qiitaのトロフィー' width={30} height={30} />
+            <Image src='/icon.png' alt='アイコン' width={30} height={30} />
             <p>KNR</p>
           </div>
         </Link>
