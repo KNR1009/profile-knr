@@ -78,14 +78,9 @@ export const Top: React.FC = () => {
             title='company'
             imagePath='/pc.jpg'
             description='These are the services my company can provide'
-            linkPath='/'
+            linkPath='/company'
           />
-          <SmCard
-            title='event'
-            imagePath='/dj.jpg'
-            description='I also organize events for engineers and creators and DJ.'
-            linkPath='/'
-          />
+          <SmCard title='event' imagePath='/dj.jpg' description='coming soon' linkPath='/' />
         </div>
       </div>
       <div className='contact-container container' data-aos='fade-up'>

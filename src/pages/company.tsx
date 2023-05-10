@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Image from 'next/image';
 
 // components
 import { Content } from '@/components/Contents';
@@ -10,33 +9,42 @@ import { SmCard } from '@/components/SmCard';
 // link
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
-export const ManagementBookshelf: React.FC = () => {
+export const Company: React.FC = () => {
   return (
     <Wrapper>
-      <Title title='運営サービス' />
+      <Title title='' />
       <Content>
         <section>
-          <h2>
-            <a href='https://management-bookshelf.com/' target='_blank' rel='noopener noreferrer'>
-              経営者の本棚
-              <span className='icon'>
-                <FaExternalLinkAlt size={15} />
-              </span>
-            </a>
-          </h2>
+          <h2>私の職場ができること概要</h2>
           <ul>
-            <li>経営者・役員の読んでいる本についてフォーカスしたメディアです</li>
-            <li>2023年5月にリリース</li>
-            <li>インタビュー・記事作成・PRまで一貫して行います</li>
-            <li>月間インプレッション数1.8億のTwitterアカウントで宣伝します</li>
+            <li>Webアプリの要件定義, 設計, デザイン, 開発, テスト, 保守運用など一貫して行います</li>
+            <li>フロントエンド, サーバーサイド, インフラ, IOSなど幅広い開発を得意としています</li>
+            <li>WebサイトやLP内のユーザーの行動分析及び改善・提案</li>
+            <li>デザインシステムを整理する自社サービスの提供</li>
           </ul>
-          <Image src='/management-bookshelf.jpg' alt='Qiitaのトロフィー' width={400} height={300} />
         </section>
+        <section>
+          <h2>開発実績</h2>
+          <ul>
+            <li>デザイン管理システム (React, Firebase)</li>
+            <li>独自CMS開発 (Next.js, Prisma, AWS)</li>
+            <li>AI営業ロープレツール(Next.js, Rails, python)</li>
+            <li>不動産投資シミュレーションアプリ(Next.js, Python, Laravel)</li>
+            <li>営業DXツール (Next.js, TypeScript)</li>
+            <li>医療従事者向けスケジュール管理アプリ (Rails×Next.js, TypeScript)</li>
+            <li>英会話アプリ (Next.js, TypeScript)</li>
+            <li>廃棄物管理アプリ (Nest.js, Prisma, Next.js)</li>
+            <li>建築DXアプリ (企画コンサル, 要件定義, 設計)</li>
+            <li>オンライン薬局アプリ(設計, マネジメント)</li>
+            <li>他多数</li>
+          </ul>
+        </section>
+
         <section>
           <h2>お問い合わせ</h2>
           <p>
-            経営者の本棚のインタビューを代表や役員の方はぜひ連絡ください。
-            <a className='link' href='https://management-bookshelf.com/form' target='_blank' rel='noopener noreferrer'>
+            会社の提供サービスやより詳しい内容についてぜひお問い合わせください
+            <a className='link' href={process.env.NEXT_PUBLIC_CONTACT_LINK} target='_blank' rel='noopener noreferrer'>
               <FaExternalLinkAlt size={16} />
             </a>
           </p>
@@ -72,6 +80,9 @@ export const ManagementBookshelf: React.FC = () => {
 };
 
 const Wrapper = styled.div`
+  .icon {
+    margin-left: 8px;
+  }
   .container {
     margin-top: 48px;
     color: #ffffff;
@@ -80,15 +91,12 @@ const Wrapper = styled.div`
       font-weight: bold;
     }
   }
-  .icon {
+  .link {
     margin-left: 8px;
   }
   .a-link {
     color: #1a73e8;
     text-decoration: underline;
-  }
-  .link {
-    margin-left: 8px;
   }
   .sm-cards {
     margin-top: 24px;

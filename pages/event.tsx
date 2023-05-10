@@ -11,8 +11,8 @@ const PersonalPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>個人でできること | KNRプロフィール</title>
-        <meta name='description' content='KNRの個人でできることを紹介します。' />
+        <title>イベント | KNRプロフィール</title>
+        <meta name='description' content='イベントの運営や企画などについて' />
         <meta property='og:title' content='個人でできること | KNRプロフィール' />
         <meta property='og:description' content='KNRのプロフィール基本情報です。' />
         <meta name='twitter:title' content='個人でできること | KNRプロフィール' />

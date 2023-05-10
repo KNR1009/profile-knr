@@ -28,7 +28,7 @@ export const Achievements: React.FC = () => {
             <li>Qiitaはユーザー数70万人の日本最大級のエンジニアコミュニティ</li>
             <li>2022年Top Contributorに選出 (上位0.0018%)</li>
             <li>9ヶ月連続月間いいね数ランキング1位</li>
-            <li>Contributions数は3万</li>
+            <li>Contributions数は3万以上</li>
             <li>フォロワー数5000人以上</li>
             <li>Qiita SILVERバッジ獲得</li>
           </ul>
@@ -51,13 +51,13 @@ export const Achievements: React.FC = () => {
         <section>
           <h2>会社関連</h2>
           <ul>
-            <li>2023年に最年少執行役員 (新卒3年目)</li>
+            <li>2023年に最年少執行役員に就任 (新卒3年目)</li>
           </ul>
         </section>
         <section>
-          <h2>その他</h2>
+          <h2>お問い合わせ</h2>
           <p>
-            同じ職種の方や経営者や役員の方で興味を持っていただけたらフォームからどうぞ
+            少しでも興味を持ってくれたらぜひ連絡ください。 フォームへ
             <a className='link' href={process.env.NEXT_PUBLIC_CONTACT_LINK} target='_blank' rel='noopener noreferrer'>
               <FaExternalLinkAlt size={16} />
             </a>

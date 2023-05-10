@@ -25,11 +25,22 @@ export const BlogForEngineers: React.FC = () => {
             </a>
           </h2>
           <ul>
-            <li>エンジニア向けの情報発信ブログ</li>
-            <li>月間PV数は1万</li>
-            <li>エンジニア向けキーワードでSEO上位も獲得</li>
+            <li>2021年より運営開始</li>
+            <li>コンセプトは「エンジニアが知りたいことがまとまっているサイト」</li>
+            <li>学習ロードマップや便利ツールなどを紹介</li>
+            <li>月間PV数は10,000以上</li>
+            <li>「WordPress 学習ロードマップ」のキーワードでSEOを1位獲得</li>
           </ul>
           <Image src='/blog-for-engineer.jpg' alt='Qiitaのトロフィー' width={400} height={250} />
+        </section>
+        <section>
+          <h2>お問い合わせ</h2>
+          <p>
+            ブログメディアのM&Aや記事の執筆、広告掲載などありましたらお気軽に連絡ください。フォームへ
+            <a className='link' href={process.env.NEXT_PUBLIC_CONTACT_LINK} target='_blank' rel='noopener noreferrer'>
+              <FaExternalLinkAlt size={16} />
+            </a>
+          </p>
         </section>
       </Content>
       <div className='can-container container'>
