@@ -26,7 +26,7 @@ const AchievementsPage: NextPage = () => {
           name='twitter:description'
           content='KNRの主な受賞歴を紹介します。Qiita「2022年 TOP Contributor」。Zennで4記事連続トレンド1位'
         />
-        <meta name='twitter:image' content='/kuri.png' />
+        <meta name='twitter:image' content='/icon.png' />
         <link rel='canonical' href={`https://knr-profile.com${currentPath}`} />
       </Head>
       <Layout>

@@ -26,7 +26,7 @@ const ManagementBookshelfPage: NextPage = () => {
           name='twitter:description'
           content='KNRが運営しているサービス紹介ページ。経営者の本棚という経営者や役員が読んでいる書籍にフォーカスを当てたインタビューメディアを運営しています。'
         />
-        <meta name='twitter:image' content='/kuri.PNG' />
+        <meta name='twitter:image' content='/icon.png' />
         <link rel='canonical' href={`https://knr-profile.com${currentPath}`} />
       </Head>
       <Layout>

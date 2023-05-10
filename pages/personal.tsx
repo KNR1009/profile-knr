@@ -17,7 +17,7 @@ const PersonalPage: NextPage = () => {
         <meta property='og:description' content='KNRのプロフィール基本情報です。' />
         <meta name='twitter:title' content='個人でできること | KNRプロフィール' />
         <meta name='twitter:description' content='KNRのプロフィール基本情報です。' />
-        <meta name='twitter:image' content='/kuri.png' />
+        <meta name='twitter:image' content='/icon.png' />
         <link rel='canonical' href={`https://knr-profile.com${currentPath}`} />
       </Head>
       <Layout>

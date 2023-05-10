@@ -49,14 +49,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta charSet='UTF-8' />
         <meta name='author' content='KNR109' />
-        <link rel='icon' href='/kuri.png' />
+        <link rel='icon' href='/icon.png' />
         <meta property='og:type' content='article' />
         <meta property='og:title' content='KNRプロフィール' />
         <meta
           property='og:description'
           content='KNRのプロフィールサイトです。渋谷でWeb系開発。執行役員。Qiita「2022年 TOP Contributor」。Zennで4記事連続トレンド1位'
         />
-        <meta property='og:image' content='/kuri.png' />
+        <meta property='og:image' content='/icon.png' />
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:site' content='@MacopeninSUTABA' />
         <meta name='twitter:title' content='KNRプロフィール' />
@@ -64,7 +64,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           name='twitter:description'
           content='KNRのプロフィールサイトです。渋谷でWeb系開発。執行役員。Qiita「2022年 TOP Contributor」。Zennで4記事連続トレンド1位'
         />
-        <meta name='twitter:image' content='/kuri.png' />
+        <meta name='twitter:image' content='/icon.png' />
         <meta property='og:site_name' content='KNRプロフィール' />
         <meta property='og:locale' content='ja_JP' />
       </Head>

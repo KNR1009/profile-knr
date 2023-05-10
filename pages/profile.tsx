@@ -23,7 +23,7 @@ const ProfilePage: NextPage = () => {
           name='twitter:description'
           content='KNRのプロフィール基本情報です。渋谷のWeb開発会社で最年少執行役員。Qiita「2022年 TOP Contributor」。Zennで4記事連続トレンド1位'
         />
-        <meta name='twitter:image' content='/kuri.png' />
+        <meta name='twitter:image' content='/icon.png' />
         <link rel='canonical' href='https://knr-profile.com' />
       </Head>
       <Layout>
