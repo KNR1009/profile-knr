@@ -12,10 +12,10 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 export const Personal: React.FC = () => {
   return (
     <Wrapper>
-      <Title title='プロフィール' />
+      <Title title='' />
       <Content>
         <section>
-          <h2>できること概要</h2>
+          <h2>私ができることの概要</h2>
           <ul>
             <li>Web系の開発や制作（要件定義から設計、開発、テスト、保守運用）</li>
             <li>記事の執筆やメディアの0→1立ち上げ</li>
@@ -26,7 +26,7 @@ export const Personal: React.FC = () => {
           </ul>
         </section>
         <section>
-          <h2>開発系</h2>
+          <h2>開発系の経歴・実績</h2>
           <h3>フロントエンド(歴3年)</h3>
           <ul>
             <li>HTMLやCSSやWordPressを用いたWeb制作</li>
@@ -55,12 +55,12 @@ export const Personal: React.FC = () => {
             <li>建築DXアプリ (企画コンサル, 要件定義, 設計)</li>
             <li>オンライン薬局アプリ(設計, マネジメント)</li>
           </ul>
-          <h3>プロダクト</h3>
+          <h3>プロダクト開発</h3>
           <ul>
             <li>プロダクトの0→1フェーズ</li>
             <li>ヒアリングを元にした企画コンサル、要件定義、設計</li>
           </ul>
-          <h3>執筆系</h3>
+          <h3>執筆した記事の一部</h3>
           <ul>
             <li>
               <a
@@ -145,18 +145,18 @@ export const Personal: React.FC = () => {
               </a>
             </li>
             <li>
-              月間PV数1万のエンジニア向けメディア
+              月間PV数1万のエンジニア向けメディアを運営
               <a href='https://sbucks-blog.com/' target='_blank' rel='noopener noreferrer'>
                 <span className='icon'>
                   <FaExternalLinkAlt size={15} />
                 </span>
               </a>
             </li>
-            <li>技術メディアの立ち上げ経験あり</li>
+            <li>技術メディアの0→1の立ち上げ経験あり</li>
           </ul>
           <h3>マーケティング</h3>
           <ul>
-            <li>新規メディアの立ち上げ</li>
+            <li>エンジニア・経営者向けのメディアの立ち上げ</li>
             <li>GA4やBigQueryを利用した数値分析・効果測定</li>
             <li>ABテストを利用したLPの最適案の提案</li>
             <li>GDN等の広告運用</li>
@@ -175,7 +175,7 @@ export const Personal: React.FC = () => {
           </ul>
         </section>
         <section>
-          <h2>その他</h2>
+          <h2>お問い合わせ</h2>
           <p>
             少しでも興味を持っていただいた方は話しましょう
             <a className='link' href={process.env.NEXT_PUBLIC_CONTACT_LINK} target='_blank' rel='noopener noreferrer'>

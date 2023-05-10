@@ -35,9 +35,9 @@ export const Profile: React.FC = () => {
           </ul>
         </section>
 
-        <h2>その他</h2>
+        <h2>お問い合わせ</h2>
         <p>
-          同じ職種の方や経営者や役員の方で興味を持っていただけたらフォームからどうぞ
+          少しでも興味を持ってくれたらぜひ連絡ください。 フォームへ
           <a className='link' href={process.env.NEXT_PUBLIC_CONTACT_LINK} target='_blank' rel='noopener noreferrer'>
             <FaExternalLinkAlt size={16} />
           </a>

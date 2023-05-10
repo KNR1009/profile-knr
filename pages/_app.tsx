@@ -12,14 +12,15 @@ function MyApp({ Component, pageProps }: AppProps) {
           name='description'
           content='KNRのプロフィールサイトです。渋谷でWeb系開発。執行役員。Qiita「2022年 TOP Contributor」。Zennで4記事連続トレンド1位'
         />
-        <link rel='icon' href='/kuri..pgg' />
+        <meta charSet='UTF-8' />
+        <meta name='author' content='KNR109' />
+        <link rel='icon' href='/kuri.png' />
         <meta property='og:type' content='article' />
         <meta property='og:title' content='KNRプロフィール' />
         <meta
           property='og:description'
           content='KNRのプロフィールサイトです。渋谷でWeb系開発。執行役員。Qiita「2022年 TOP Contributor」。Zennで4記事連続トレンド1位'
         />
-        {/* <meta property='og:url' content={`${currentUrl}`} /> */}
         <meta property='og:image' content='/kuri.png' />
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:site' content='@MacopeninSUTABA' />
