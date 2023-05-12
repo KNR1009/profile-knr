@@ -5,7 +5,7 @@ import Image from 'next/image';
 // components
 import { Content } from '@/components/Contents';
 import { Title } from '@/components/Title';
-import { SmCard } from '@/components/SmCard';
+// import { SmCard } from '@/components/SmCard';
 
 // link
 import { FaExternalLinkAlt } from 'react-icons/fa';
@@ -42,7 +42,7 @@ export const ManagementBookshelf: React.FC = () => {
           </p>
         </section>
       </Content>
-      <div className='can-container container'>
+      {/* <div className='can-container container'>
         <div className='title'>
           <h2>できること</h2>
         </div>
@@ -66,7 +66,7 @@ export const ManagementBookshelf: React.FC = () => {
             linkPath='/'
           />
         </div>
-      </div>
+      </div> */}
     </Wrapper>
   );
 };

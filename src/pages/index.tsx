@@ -7,7 +7,7 @@ import banner from '../../public/profile-banner.png';
 // components
 import { LgCard } from '@/components/LgCard';
 import { MdCard } from '@/components/MdCard';
-import { SmCard } from '@/components/SmCard';
+// import { SmCard } from '@/components/SmCard';
 import { FaTwitter, FaGithub } from 'react-icons/fa';
 
 // fade-in
@@ -68,7 +68,8 @@ export const Top: React.FC = () => {
           />
         </div>
       </div>
-      <div className='can-container container' data-aos='fade-up'>
+      {/* できること一覧 (内容が重複するので一旦コメントアウト) */}
+      {/* <div className='can-container container' data-aos='fade-up'>
         <div className='title'>
           <h2>What you can do.</h2>
         </div>
@@ -82,7 +83,7 @@ export const Top: React.FC = () => {
           />
           <SmCard title='event' imagePath='/dj.jpg' description='coming soon' linkPath='/' />
         </div>
-      </div>
+      </div> */}
       <div className='contact-container container' data-aos='fade-up'>
         <div className='title'>
           <h2>Other Links</h2>
