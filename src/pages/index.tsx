@@ -7,7 +7,7 @@ import banner from '../../public/profile-banner.png';
 // components
 import { LgCard } from '@/components/LgCard';
 import { MdCard } from '@/components/MdCard';
-import { SmCard } from '@/components/SmCard';
+// import { SmCard } from '@/components/SmCard';
 import { FaTwitter, FaGithub } from 'react-icons/fa';
 
 // fade-in
