@@ -5,7 +5,7 @@ import Image from 'next/image';
 // components
 import { Content } from '@/components/Contents';
 import { Title } from '@/components/Title';
-import { SmCard } from '@/components/SmCard';
+// import { SmCard } from '@/components/SmCard';
 
 // link
 import { FaExternalLinkAlt } from 'react-icons/fa';
