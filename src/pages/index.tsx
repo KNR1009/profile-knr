@@ -26,7 +26,13 @@ export const Top: React.FC = () => {
   return (
     <Wrapper>
       <div className='banner-container' data-aos='fade-up'>
-        <Image src={banner} alt='ロゴ' className='logo-image' loading='lazy' />
+        <a
+          target='_blank'
+          rel='noopener noreferrer'
+          href='https://docs.google.com/forms/d/e/1FAIpQLSfaQFw3laJXqQAiNpY5TVwPN__KQpzSYq6yLYY4d0bRcYUdEA/viewform'
+        >
+          <Image src={banner} alt='ロゴ' className='logo-image' loading='lazy' />
+        </a>
       </div>
       <div className='profile-container container' data-aos='fade-up'>
         <div className='title'>
@@ -129,7 +135,9 @@ export const Top: React.FC = () => {
 
 const Wrapper = styled.div`
   color: #ffffff;
-
+  .banner-container {
+    cursor: pointer;
+  }
   .icon-cards {
     margin-top: 24px;
     display: grid;

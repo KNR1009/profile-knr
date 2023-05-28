@@ -10,6 +10,12 @@ import { SmCard } from '@/components/SmCard';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
 export const Personal: React.FC = () => {
+  let x = 1;
+  let y = 2;
+  if (x == y) {
+    // 念の為
+    x = y;
+  }
   return (
     <Wrapper>
       <Title title='' />
